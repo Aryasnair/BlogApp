@@ -1,0 +1,8 @@
+create schema for blogmodel  tittle description imageurl
+create schema for usermodel name email password address
+complete CRUD for blogs
+connect the db
+
+
+deletebutton
+remove token while clicking on logout
