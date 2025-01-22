@@ -15,7 +15,7 @@ const Login = () => {
 
         console.log("Form data being sent to backend:", form);
 
-        axios.post('http://localhost:5000/user/login', form)
+        axios.post('/api/user/login', form)
             .then((res) => {
                 console.log("Login response:", res);
 
