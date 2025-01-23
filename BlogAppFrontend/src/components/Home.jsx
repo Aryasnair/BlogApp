@@ -10,7 +10,7 @@ const Home = () => {
     // Fetch blogs from the backend
     useEffect(() => {
         axiosInstance
-            .get('/api/blog/blogs')
+            .get('/blog/blogs')
             .then((res) => {
                 setData(res.data);
             })

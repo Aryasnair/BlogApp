@@ -15,7 +15,7 @@ const Addblog = () => {
     const location=useLocation();
     function capValue(){
         if(location.state!=null){
-            axiosInstance.put('/api/blog/editblog/',+location.state.val._id,blogData).then((res)=>{
+            axiosInstance.put('/blog/editblog/',+location.state.val._id,blogData).then((res)=>{
             alert('Blog updated successfully!');
             navigate('/blogs');
         })
@@ -31,7 +31,7 @@ const Addblog = () => {
     const handleSubmit = async () => {
         if (blogData.tittle && blogData.description && blogData.image) {
             try {
-                await axiosInstance.post('/api/blog/addblog', blogData);
+                await axiosInstance.post('/blog/addblog', blogData);
                 alert('Blog added successfully!');
                 navigate('/blogs'); // Redirect to the Home page
             } catch (error) {
