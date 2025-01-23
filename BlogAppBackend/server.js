@@ -7,7 +7,7 @@ const cors = require('cors');
 app.use(cors());
 
 require('dotenv').config();
-require('./api/db/connection')
+require('./db/connection')
 
 
 const blogRoutes = require('./routes/blogRoutes');
